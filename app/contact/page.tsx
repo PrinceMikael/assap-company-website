@@ -17,8 +17,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+255 788 706 592", "+255 624 406 592", "+255 752 026 592"],
-    action: "tel:+255788706592",
+    details: ["+255 752 026 592", "+255 624 406 592", "+255 788 706 592"],
+    action: "tel:+255752026592",
   },
   {
     icon: Mail,
@@ -35,7 +35,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Business Hours",
-    details: ["Monday - Friday: 8:00 AM - 5:00 PM", "Saturday: 8:00 AM - 1:00 PM"],
+    details: ["Monday - Friday: 8:00 AM - 5:00 PM", "Sunday: 8:00 AM - 1:00 PM"],
     action: null,
   },
 ]

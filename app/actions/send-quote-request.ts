@@ -28,47 +28,36 @@ export async function sendQuoteRequest(data: QuoteRequestData) {
   }
 
   try {
-    // Format the email content
-    const emailContent = `
-New Quote Request from ASSAP COMPANY LIMITED Website
+    // Send to Web3Forms API
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        access_key: process.env.WEB3FORMS_ACCESS_KEY,
+        subject: `New Quote Request: ${data.subject}`,
+        from_name: data.name,
+        email: data.email,
+        phone: data.phone || "Not provided",
+        company: data.company || "Not provided",
+        message: data.message,
+      }),
+    })
 
-CONTACT DETAILS
-================
-Name: ${data.name}
-Email: ${data.email}
-Phone: ${data.phone || "Not provided"}
-Company: ${data.company || "Not provided"}
+    const result = await response.json()
 
-INQUIRY DETAILS
-================
-Subject: ${data.subject}
-
-Message:
-${data.message}
-
----
-This message was sent from the ASSAP COMPANY LIMITED website contact form.
-Please respond to: ${data.email}
-    `.trim()
-
-    // In production, you would integrate with an email service like:
-    // - Resend (resend.com)
-    // - SendGrid
-    // - AWS SES
-    // - Nodemailer with SMTP
-    
-    // For now, we'll log the request and simulate success
-    // The email would be sent to: info@assap.co.tz
-    
-    console.log("Quote Request to info@assap.co.tz:")
-    console.log(emailContent)
-
-    // Simulate email sending delay
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    return {
-      success: true,
-      message: "Your quote request has been sent successfully. We will contact you shortly at " + data.email,
+    if (result.success) {
+      return {
+        success: true,
+        message: "Your quote request has been sent successfully. We will contact you shortly at " + data.email,
+      }
+    } else {
+      console.error("Web3Forms error:", result)
+      return {
+        success: false,
+        error: "Failed to send your request. Please try again or contact us directly at info@assap.co.tz",
+      }
     }
   } catch (error) {
     console.error("Error sending quote request:", error)

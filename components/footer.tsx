@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin, ArrowRight, Facebook, Linkedin, Twitter, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, ArrowRight, MessageCircle, Linkedin, X, Instagram } from "lucide-react"
 
 const quickLinks = [
   { name: "About Us", href: "/about" },
@@ -47,10 +47,12 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://wa.me/255752026592"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent hover:text-accent-foreground transition-material"
               >
-                <Facebook className="h-5 w-5" />
+                <MessageCircle className="h-5 w-5" />
               </a>
               <a
                 href="https://www.instagram.com/assap_limited?igsh=MXNpdDYyOTRmMmM5Nw%3D%3D"
@@ -70,7 +72,7 @@ export function Footer() {
                 href="#"
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent hover:text-accent-foreground transition-material"
               >
-                <Twitter className="h-5 w-5" />
+                <X className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -121,13 +123,14 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+255788706592"
+                  href="tel:+255752026592"
                   className="flex items-start gap-3 text-primary-foreground/80 hover:text-accent transition-material"
                 >
                   <Phone className="h-5 w-5 mt-0.5 shrink-0" />
                   <div>
-                    <p>+255 788 706 592</p>
+                    <p>+255 752 026 592</p>
                     <p>+255 624 406 592</p>
+                    <p>+255 788 706 592</p>
                   </div>
                 </a>
               </li>

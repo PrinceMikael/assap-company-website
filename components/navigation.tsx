@@ -38,9 +38,9 @@ export function Navigation() {
       <div className="bg-primary text-primary-foreground py-2 hidden md:block">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+255788706592" className="flex items-center gap-2 hover:text-accent transition-material">
+            <a href="tel:+255752026592" className="flex items-center gap-2 hover:text-accent transition-material">
               <Phone className="h-4 w-4" />
-              +255 788 706 592
+              +255 752 026 592
             </a>
             <a
               href="mailto:info@assap.co.tz"

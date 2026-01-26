@@ -5,10 +5,10 @@ import Link from "next/link"
 import { ArrowRight, Shield, CheckCircle } from "lucide-react"
 
 const stats = [
-  { value: "10+", label: "Years Experience" },
-  { value: "500+", label: "Projects Completed" },
-  { value: "100+", label: "Trusted Clients" },
-  { value: "50+", label: "Expert Team" },
+  { value: "5+", label: "Years Experience" },
+  { value: "100+", label: "Projects Completed" },
+  { value: "30+", label: "Trusted Clients" },
+  { value: "30+", label: "Expert Team" },
 ]
 
 export function HeroSection() {
