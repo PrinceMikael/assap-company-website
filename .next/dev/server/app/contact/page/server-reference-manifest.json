@@ -1,0 +1,20 @@
+{
+  "node": {
+    "4028e25b9e8dc789be73489059f4a2027e8d7bfa0a": {
+      "workers": {
+        "app/contact/page": {
+          "moduleId": "[project]/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions/send-quote-request.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendQuoteRequest",
+          "filename": "app/actions/send-quote-request.ts"
+        }
+      },
+      "layer": {
+        "app/contact/page": "action-browser"
+      },
+      "exportedName": "sendQuoteRequest",
+      "filename": "app/actions/send-quote-request.ts"
+    }
+  },
+  "edge": {}
+}

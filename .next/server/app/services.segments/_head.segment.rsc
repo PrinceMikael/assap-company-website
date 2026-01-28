@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"ViewportBoundary"]
+4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"IconMark"]
+0:{"buildId":"7WOoWYLa25MZwawF2GJOa","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0B3C5D"}]]
+6:[["$","title","0",{"children":"ASSAP COMPANY LIMITED | Industrial & Mining Solutions Tanzania"}],["$","meta","1",{"name":"description","content":"Professional industrial, mining and general supply company in Tanzania. Providing integrated services including industrial supply, construction support, workforce deployment, and HSE services."}],["$","meta","2",{"name":"author","content":"ASSAP COMPANY LIMITED"}],["$","meta","3",{"name":"generator","content":"v0.app"}],["$","meta","4",{"name":"keywords","content":"industrial supply,mining supply,Tanzania,construction,safety equipment,PPE,heavy equipment,ASSAP COMPANY LIMITED"}],["$","link","5",{"rel":"icon","href":"/images/img-5438-removebg-preview.png","sizes":"any"}],["$","link","6",{"rel":"apple-touch-icon","href":"/images/img-5438-removebg-preview.png"}],["$","$L7","7",{}]]

@@ -1,0 +1,21 @@
+{
+  "node": {
+    "40300a556578babb2495d794c278fd968a1e33325a": {
+      "workers": {
+        "app/contact/page": {
+          "moduleId": 66381,
+          "async": false,
+          "exportedName": "sendQuoteRequest",
+          "filename": "app/actions/send-quote-request.ts"
+        }
+      },
+      "layer": {
+        "app/contact/page": "action-browser"
+      },
+      "filename": "app/actions/send-quote-request.ts",
+      "exportedName": "sendQuoteRequest"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "v79g6HWLjFMAYeH+ww3Nz7XjuVA0M1sztG1sr8DejDY="
+}
