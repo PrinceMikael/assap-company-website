@@ -28,42 +28,38 @@ export async function sendQuoteRequest(data: QuoteRequestData) {
   }
 
   try {
-    // Send to Web3Forms API
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_ACCESS_KEY,
-        subject: `New Quote Request: ${data.subject}`,
-        from_name: data.name,
-        email: data.email,
-        phone: data.phone || "Not provided",
-        company: data.company || "Not provided",
-        message: data.message,
-      }),
-    })
+    // Format the message for WhatsApp
+    const whatsappMessage = `*New Quote Request from ASSAP Website*
 
-    const result = await response.json()
+*Contact Details:*
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || "Not provided"}
+Company: ${data.company || "Not provided"}
 
-    if (result.success) {
-      return {
-        success: true,
-        message: "Your quote request has been sent successfully. We will contact you shortly at " + data.email,
-      }
-    } else {
-      console.error("Web3Forms error:", result)
-      return {
-        success: false,
-        error: "Failed to send your request. Please try again or contact us directly at info@assap.co.tz",
-      }
+*Subject:* ${data.subject}
+
+*Message:*
+${data.message}
+
+---
+Sent from ASSAP Company Website`
+
+    // Encode the message for WhatsApp URL
+    const encodedMessage = encodeURIComponent(whatsappMessage)
+    const whatsappNumber = "255752026592" // ASSAP WhatsApp number
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+
+    return {
+      success: true,
+      message: "Redirecting to WhatsApp...",
+      whatsappURL: whatsappURL,
     }
   } catch (error) {
-    console.error("Error sending quote request:", error)
+    console.error("Error processing quote request:", error)
     return {
       success: false,
-      error: "Failed to send your request. Please try again or contact us directly at info@assap.co.tz",
+      error: "Failed to process your request. Please try again.",
     }
   }
 }

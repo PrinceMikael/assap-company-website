@@ -183,19 +183,19 @@ export default function ProjectsPage() {
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="p-6 bg-card rounded-xl border border-border">
-                  <p className="text-3xl font-bold text-accent">10+</p>
+                  <p className="text-3xl font-bold text-accent">5+</p>
                   <p className="text-muted-foreground text-sm">Years Experience</p>
                 </div>
                 <div className="p-6 bg-card rounded-xl border border-border">
-                  <p className="text-3xl font-bold text-accent">500+</p>
+                  <p className="text-3xl font-bold text-accent">100+</p>
                   <p className="text-muted-foreground text-sm">Projects Completed</p>
                 </div>
                 <div className="p-6 bg-card rounded-xl border border-border">
-                  <p className="text-3xl font-bold text-accent">100+</p>
+                  <p className="text-3xl font-bold text-accent">30+</p>
                   <p className="text-muted-foreground text-sm">Trusted Clients</p>
                 </div>
                 <div className="p-6 bg-card rounded-xl border border-border">
-                  <p className="text-3xl font-bold text-accent">50+</p>
+                  <p className="text-3xl font-bold text-accent">30+</p>
                   <p className="text-muted-foreground text-sm">Expert Team</p>
                 </div>
               </div>

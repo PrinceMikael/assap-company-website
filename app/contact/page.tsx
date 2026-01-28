@@ -63,10 +63,15 @@ export default function ContactPage() {
     const result = await sendQuoteRequest(formData)
 
     if (result.success) {
+      // Open WhatsApp with pre-filled message
+      if (result.whatsappURL) {
+        window.open(result.whatsappURL, '_blank')
+      }
       setSubmitStatus({
         type: "success",
-        message: result.message || "Your request has been sent successfully!",
+        message: "Opening WhatsApp...",
       })
+      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -118,7 +123,7 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold text-foreground mb-6">Let's Discuss Your Requirements</h2>
                 <p className="text-muted-foreground mb-8">
                   Whether you need industrial supplies, construction support, or workforce solutions, our team is ready
-                  to assist you. Contact us today for competitive quotes and exceptional service.
+                  to assist you. Share your requirements and we'll get back to you promptly.
                 </p>
 
                 <div className="space-y-6">
@@ -279,10 +284,6 @@ export default function ContactPage() {
                           required
                           className="bg-background resize-none"
                         />
-                      </div>
-
-                      <div className="text-sm text-muted-foreground mb-4">
-                        Your request will be sent to <span className="font-medium text-foreground">info@assap.co.tz</span>
                       </div>
 
                       <Button

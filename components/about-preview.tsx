@@ -21,7 +21,7 @@ export function AboutPreview() {
             </div>
             {/* Experience Badge */}
             <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-2xl shadow-xl">
-              <p className="text-4xl font-bold">10+</p>
+              <p className="text-4xl font-bold">5+</p>
               <p className="text-sm">Years of Excellence</p>
             </div>
           </div>

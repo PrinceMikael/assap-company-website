@@ -18,9 +18,17 @@ yarn-error.log*
 
 # env files
 .env*
+!.env.example
 
 # vercel
 .vercel
+
+# pm2 logs
+logs/
+*.log
+
+# deployment
+ecosystem.config.js.backup
 
 # typescript
 *.tsbuildinfo
