@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 import { Menu, Phone, Mail } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -141,6 +141,9 @@ export function Navigation() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[350px] bg-gradient-to-br from-background via-background to-primary/5 border-l-2 border-primary/20">
+                {/* Accessibility Title - Visually Hidden */}
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                
                 <div className="flex flex-col h-full">
                   {/* Mobile Logo Header */}
                   <div className="flex items-center gap-3 pb-6 border-b border-border/50">
