@@ -154,7 +154,7 @@ export default function ServicesPage() {
                     </Button>
                   </div>
                   <div className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                    <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+                    <div className="aspect-4/3 rounded-2xl overflow-hidden">
                       <img
                         src={service.image || "/placeholder.svg"}
                         alt={service.title}

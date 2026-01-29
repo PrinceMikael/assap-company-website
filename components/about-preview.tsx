@@ -16,7 +16,7 @@ export function AboutPreview() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="relative">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+            <div className="relative aspect-4/3 rounded-2xl overflow-hidden">
               <Image src="/industrial-warehouse-workers-professional-team-saf.jpg" alt="ASSAP Team at Work" fill className="object-cover" />
             </div>
             {/* Experience Badge */}

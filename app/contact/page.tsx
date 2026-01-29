@@ -338,7 +338,7 @@ export default function ContactPage() {
                 Based in Tarime, Mara Region - serving industrial and mining operations across Tanzania
               </p>
             </div>
-            <div className="aspect-[21/9] bg-muted rounded-2xl overflow-hidden">
+            <div className="aspect-21/9 bg-muted rounded-2xl overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127573.89012376!2d34.30000000000001!3d-1.3500000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d57a1c4d66b0c5%3A0x4f6a3c7e8b9d0e1f!2sTarime%2C%20Mara%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1609459200000!5m2!1sen!2sus"
                 width="100%"

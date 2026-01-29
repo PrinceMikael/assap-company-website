@@ -36,7 +36,7 @@ export function Navigation() {
   return (
     <>
       {/* Top bar with contact info - Enhanced for mobile */}
-      <div className="bg-gradient-to-r from-primary via-primary to-primary/90 text-primary-foreground py-2.5 shadow-sm">
+      <div className="bg-linear-to-r from-primary via-primary to-primary/90 text-primary-foreground py-2.5 shadow-sm">
         <div className="container mx-auto px-4">
           {/* Mobile: Single line with icon */}
           <div className="flex md:hidden items-center justify-center gap-2 text-xs">
@@ -77,7 +77,7 @@ export function Navigation() {
           "sticky top-0 z-50 w-full transition-material",
           isScrolled 
             ? "bg-background/98 backdrop-blur-xl shadow-lg border-b border-border" 
-            : "bg-gradient-to-b from-background via-background to-background/50 shadow-sm",
+            : "bg-linear-to-b from-background via-background to-background/50 shadow-sm",
         )}
       >
         <nav className="container mx-auto px-4">
@@ -160,13 +160,13 @@ export function Navigation() {
               </SheetTrigger>
               <SheetContent 
                 side="right" 
-                className="w-[280px] sm:w-[320px] bg-background/98 backdrop-blur-xl border-l border-primary/20 p-0 overflow-hidden"
+                className="w-70 sm:w-80 bg-background/98 backdrop-blur-xl border-l border-primary/20 p-0 overflow-hidden"
               >
                 {/* Accessibility Title */}
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 
                 {/* Animated Background Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5 opacity-50" />
+                <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-background to-accent/5 opacity-50" />
                 
                 <div className="relative flex flex-col h-full p-6">
                   {/* Mobile Logo Header */}
@@ -215,7 +215,7 @@ export function Navigation() {
                           {pathname === item.href && (
                             <motion.div
                               layoutId="activeNav"
-                              className="absolute inset-0 bg-gradient-to-r from-primary to-primary/80 rounded-lg"
+                              className="absolute inset-0 bg-linear-to-r from-primary to-primary/80 rounded-lg"
                               transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                             />
                           )}
@@ -256,7 +256,7 @@ export function Navigation() {
                   >
                     <Button 
                       asChild 
-                      className="w-full bg-gradient-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent text-accent-foreground font-semibold shadow-lg hover:shadow-xl transition-all duration-300 py-5 mb-5"
+                      className="w-full bg-linear-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent text-accent-foreground font-semibold shadow-lg hover:shadow-xl transition-all duration-300 py-5 mb-5"
                     >
                       <Link href="/contact" onClick={() => setIsOpen(false)}>
                         <span>Request a Quote</span>

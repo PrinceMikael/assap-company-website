@@ -21,7 +21,7 @@ export function HeroSection() {
           backgroundImage: `url('/industrial-mining-site-heavy-machinery-excavator-c.jpg')`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-primary/95 via-primary/85 to-primary/70"></div>
       </div>
 
       {/* Content */}
